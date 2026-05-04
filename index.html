@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NASA Clone - Responsive</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black">
+
+<nav class="flex items-center justify-between px-4 md:px-8 py-4 text-white sticky top-0 bg-black/90 z-50">
+  <div class="flex items-center gap-4">
+    <div class="hidden sm:flex items-center gap-2 cursor-pointer">
+      <span class="font-semibold text-sm md:text-lg">Explore</span>
+      <span class="text-xs">▾</span>
+    </div>
+    <input 
+      type="text" 
+      placeholder="Search"
+      class="bg-black border border-gray-600 px-3 py-1 rounded text-xs md:text-sm outline-none w-24 md:w-full"
+    >
+  </div>
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" class="w-10 md:w-14">
+
+  <div class="flex items-center gap-3 md:gap-6 text-[10px] md:text-base font-bold">
+    <div class="hidden md:block cursor-pointer hover:text-gray-300">News & <br><span>Events</span></div>
+    <span class="text-[13px]">▾</span>
+    <div class="hidden sm:flex items-center gap-1 cursor-pointer hover:text-gray-300">
+      Multimedia <span class="text-[13px]">▾</span>
+    </div>
+    <div class="cursor-pointer font-bold">
+      NASA+ <span class="text-[10px] bg-red-600 px-1 rounded align-top">LIVE</span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="relative min-h-[115vh] md:min-h-[120vh] text-white flex flex-col justify-between">
+
+  <!-- Background -->
+  <img 
+    src="https://www.nasa.gov/wp-content/uploads/2026/04/54367894268-1694784fa3-o.jpg?resize=2000,1333" 
+    class="absolute w-full h-full object-cover"
+  >
+
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-5xl  px-6 md:px-12 pt-40 pb-20">
+
+    <h1 class="text-5xl md:text-6xl font-bold mb-6">
+      Humans in Space
+    </h1>
+
+    <p class="max-w-xl text-lg text-gray-200 mb-10">
+      
+										The Roscosmos Soyuz MS‑29 mission, targeted to launch on Tuesday, July 14, will carry NASA astronaut Anil Menon and Roscosmos cosmonauts Pyotr Dubrov and Anna Kikina to the International Space Station for an eight‑month stay as part of Expeditions 74 and 75.									
+    </p>
+
+    <button class="bg-red-600 hover:bg-red-700 px-6 py-3 rounded text-lg font-semibold mt-6">
+      Roscosmos Soyuz MS-29
+    </button>
+
+  </div>
+
+  <!-- Bottom Links -->
+  <div class="relative z-10 w-full px-6 md:px-12 pb-16 pt-10">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between gap-8 mr-48">
+
+      <div class="border-t border-gray-500 pt-5 w-full">
+        <p class="text-gray-400 text-xs mb-3 tracking-widest">
+           CURRENT MISSION
+        </p>
+        <p class="font-semibold flex items-center gap-2">
+           Expedition 74
+          <span class="inline-flex bg-red-600 w-5 h-5 items-center justify-center rounded-full text-xs">➜</span>
+        </p>
+      </div>
+
+      <div class="border-t border-gray-500 pt-5 w-full">
+        <p class="text-gray-400 text-xs mb-3 tracking-widest">
+         FUTURE MISSION
+        </p>
+        <p class="font-semibold flex items-center gap-2">
+          NASA’s SpaceX Crew-13
+          <span class="inline-flex bg-red-600 w-5 h-5 items-center justify-center rounded-full text-xs">➜</span>
+        </p>
+      </div>
+
+      <div class="border-t border-gray-500 pt-5 w-full">
+        <p class="text-gray-400 text-xs mb-3 tracking-widest">
+        BENEFITS FOR HUMANITY
+        </p>
+        <p class="font-semibold flex items-center gap-2">
+          Space Station Updates
+          <span class="inline-flex bg-red-600 w-5 h-5 items-center justify-center rounded-full text-xs">➜</span>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<section class="bg-white text-black py-12 md:py-20">
+
+  <!-- Header -->
+  <div class="flex flex-col md:flex-row justify-between mx-5 mb-16 text-2xl font-bold items-start md:items-center gap-4">
+
+    <h1 class="text-3xl md:text-5xl">Featured News</h1>
+
+    <div class="flex items-center gap-2">
+      <h3>Recently Published</h3>
+      <span class="inline-flex bg-red-500 w-5 h-5 items-center justify-center rounded-full text-xs text-white">
+        ➜
+      </span>
+    </div>
+
+  </div>
+
+  <!-- GRID (IMPORTANT CHANGE HERE) -->
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-6">
+
+    <!-- 1st CARD (WIDER) -->
+    <div class="md:col-span-2 relative h-[420px] group overflow-hidden rounded-xl">
+
+      <img 
+        src="https://images-assets.nasa.gov/image/KSC-20260428-PH-GEB02_0010/KSC-20260428-PH-GEB02_0010~large.jpg?w=900&h=600&fit=crop&crop=faces%2Cfocalpoint"
+        class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+      >
+
+      <div class="absolute inset-0 bg-black/30"></div>
+
+      <div class="absolute bottom-0 p-6 text-white z-10">
+        <p class="text-[10px] font-bold mb-2">4 MIN READ</p>
+        <h2 class="text-xl md:text-2xl font-bold leading-tight">
+          NASA’s Artemis III Moon Rocket Hardware Arrives
+        </h2>
+      </div>
+
+    </div>
+
+    <!-- 2nd CARD (SMALLER WIDTH) -->
+    <div class="md:col-span-1 relative h-[420px] group overflow-hidden rounded-xl">
+
+      <img 
+        src="https://images-assets.nasa.gov/image/iss074e0503710/iss074e0503710~large.jpg?w=600&h=400&fit=crop&crop=faces%2Cfocalpoint"
+        class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+      >
+
+      <div class="absolute inset-0 bg-black/40"></div>
+
+      <div class="absolute bottom-0 p-6 text-white z-10">
+        <p class="text-[10px] font-bold mb-2">5 MIN READ</p>
+        <h2 class="text-xl md:text-2xl font-bold leading-tight">
+          NASA Fires Up Powerful Lithium-Fed Thruster
+        </h2>
+      </div>
+
+    </div>
+
+    <!-- 3rd COLUMN -->
+    <div class="md:col-span-1 flex flex-col gap-6">
+
+      <div class="relative h-[200px] group overflow-hidden rounded-xl">
+        <img src="https://www.nasa.gov/wp-content/uploads/2026/04/qinetiq-iasp-sfdqinetiqwindtunneltest.jpg?resize=600,400"
+          class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="absolute bottom-0 p-4 text-white z-10">
+          <h2 class="text-base font-bold">NASA Astronaut Mission Update</h2>
+        </div>
+      </div>
+
+      <div class="relative h-[200px] group overflow-hidden rounded-xl">
+        <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/landsat/2026/04/20240105_Band11.png"
+          class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="absolute bottom-0 p-4 text-white z-10">
+          <h2 class="text-base font-bold">NASA Laser Terminal Enhances Views</h2>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section class="bg-white text-black py-10 border-t border-gray-100">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="flex items-center md:items-start gap-4">
+      <img src="https://www.nasa.gov/wp-content/uploads/2026/04/mpd-thumbnail-image.png?resize=150,150" class="w-16 h-16 flex-shrink-0 rounded-full object-cover">
+      <div>
+        <p class="text-[10px] text-gray-500 font-bold uppercase">Blog</p>
+        <h3 class="text-sm font-bold leading-snug">Crew Opens Cargo Craft, Works on Physics Gear</h3>
+      </div>
+    </div>
+    <div class="flex items-center md:items-start gap-4">
+      <img src="https://www.nasa.gov/wp-content/uploads/2026/02/afrc2025-0173-10-lede.jpg?resize=150,150" class="w-16 h-16 flex-shrink-0 rounded-full object-cover">
+      <div>
+        <p class="text-[10px] text-gray-500 font-bold uppercase">Blog</p>
+        <h3 class="text-sm font-bold leading-snug">NASA’s Dragonfly Rotorcraft Gets Decked Out</h3>
+      </div>
+    </div>
+    <div class="flex items-center md:items-start gap-4">
+      <img src="https://www.nasa.gov/wp-content/uploads/2026/04/e1-pia26696-curiosity-captures-a-360-degree-view-at-nevado-sajama.jpg?resize=150,150" class="w-16 h-16 flex-shrink-0 rounded-full object-cover">
+      <div>
+        <p class="text-[10px] text-gray-500 font-bold uppercase">Article</p>
+        <h3 class="text-sm font-bold leading-snug">Liquid Lifeline: IV Fluid In Space</h3>
+      </div>
+    </div>
+    <div class="flex items-center md:items-start gap-4">
+      <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/dragonfly/FitCheck1.jpg" class="w-16 h-16 flex-shrink-0 rounded-full object-cover">
+      <div>
+        <p class="text-[10px] text-gray-500 font-bold uppercase">Article</p>
+        <h3 class="text-sm font-bold leading-snug">NASA Releases Powerful Lava Software</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-black text-white py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10 md:gap-16">
+    <div class="w-full md:w-2/5 order-2 md:order-1">
+      <p class="text-[10px] tracking-widest text-gray-400 uppercase font-bold mb-4">Featured Video</p>
+      <h2 class="text-3xl md:text-5xl font-bold leading-tight mb-6">Capturing Two <br> Sides of Mars</h2>
+      <p class="text-gray-300 text-sm md:text-lg mb-8 leading-relaxed">NASA's Curiosity and Perseverance rovers have captured 360-degree landscapes revealing the Red Planet's watery past.</p>
+      <a href="#" class="inline-flex items-center gap-4 text-white font-bold group">
+        <span>Learn More</span>
+        <span class="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center group-hover:scale-110 transition-all">➜</span>
+      </a>
+    </div>
+    <div class="w-full md:w-3/5 order-1 md:order-2">
+
+  <div class="relative aspect-video rounded-sm overflow-hidden shadow-2xl">
+
+    <iframe 
+      class="absolute inset-0 w-full h-full"
+      src="https://www.youtube.com/embed/XkM_04Ch76E"
+      title="NASA Video"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+
+  </div>
+
+</div>
+  </div>
+</section>
+
+<section class="bg-white text-black py-12 md:py-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-row justify-between items-center mb-10">
+      <h2 class="text-2xl md:text-5xl font-bold">NASA Science</h2>
+      <a href="#" class="flex items-center gap-2 font-bold text-sm md:text-lg group">
+        <span class="hidden sm:inline">Discover More</span> 
+        <span class="w-6 h-6 rounded-full bg-red-600 flex items-center justify-center text-white text-[10px]">➜</span>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+      <div class="relative h-[400px] overflow-hidden group">
+        <img src="https://images-assets.nasa.gov/image/PIA24034/PIA24034~orig.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+        <div class="absolute bottom-5 left-5 right-5 flex justify-between items-end">
+          <h3 class="text-white text-xl font-bold leading-tight">Mars <br> Exploration</h3>
+          <span class="text-red-500 font-bold text-2xl">➜</span>
+        </div>
+      </div>
+      <div class="relative h-[400px] overflow-hidden group">
+        <img src="https://images-assets.nasa.gov/image/PIA23962/PIA23962~orig.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+        <div class="absolute bottom-5 left-5 right-5 flex justify-between items-end">
+          <h3 class="text-white text-xl font-bold leading-tight">Perseverance <br> Rover</h3>
+          <span class="text-red-500 font-bold text-2xl">➜</span>
+        </div>
+      </div>
+      <div class="relative h-[400px] overflow-hidden group">
+        <img src="https://images-assets.nasa.gov/image/PIA23491/PIA23491~orig.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+        <div class="absolute bottom-5 left-5 right-5 flex justify-between items-end">
+          <h3 class="text-white text-xl font-bold leading-tight">Science <br> Goals</h3>
+          <span class="text-red-500 font-bold text-2xl">➜</span>
+        </div>
+      </div>
+      <div class="relative h-[400px] overflow-hidden group">
+        <img src="https://images-assets.nasa.gov/image/PIA23492/PIA23492~orig.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+        <div class="absolute bottom-5 left-5 right-5 flex justify-between items-end">
+          <h3 class="text-white text-xl font-bold leading-tight">Rover <br> Basics</h3>
+          <span class="text-red-500 font-bold text-2xl">➜</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-white text-black py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10 md:gap-20">
+    
+    <div class="w-full md:w-2/5 order-2 md:order-1">
+      <p class="text-[10px] tracking-[0.3em] text-gray-500 uppercase font-bold mb-4">
+        Today
+      </p>
+      
+      <h2 class="text-4xl md:text-6xl font-bold leading-tight mb-8">
+        Image Of The <br class="hidden md:block"> Day
+      </h2>
+      
+      <div class="mb-8">
+        <h3 class="text-xl md:text-2xl font-bold mb-3">Science in Space</h3>
+        <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+          Expedition 74 flight engineers Chris Williams of NASA and Sophie Adenot of the European Space Agency work together in the Kibo laboratory module's Life Science Glovebox.
+        </p>
+      </div>
+      
+      <a href="#" class="inline-flex items-center gap-4 text-black font-bold group text-lg">
+        <span>Browse Image Archive</span>
+        <span class="w-6 h-6 rounded-full bg-[#ff3e3e] flex items-center justify-center text-white text-xs group-hover:bg-red-700 transition-all">
+          ➜
+        </span>
+      </a>
+    </div>
+
+    <div class="w-full md:w-3/5 order-1 md:order-2">
+      <div class="relative group cursor-pointer">
+        <img 
+          src="https://www.nasa.gov/wp-content/uploads/2026/04/55228089453-c0d41d11a7-o.jpg?resize=1200,800" 
+          alt="Astronauts in ISS" 
+          class="w-full h-auto shadow-xl"
+        >
+        
+        <div class="absolute top-4 right-4 bg-blue-500/80 p-2 rounded-sm text-white hover:bg-blue-600 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          </svg>
+        </div>
+
+        <div class="flex justify-end mt-2">
+          <a href="#" class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider group">
+            View image 
+            <span class="text-red-600 group-hover:translate-x-1 transition-transform">➜</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="bg-[#f1f1f1] text-black py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    
+    <h2 class="text-4xl md:text-5xl font-bold mb-12">More NASA Images</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      
+      <div class="group cursor-pointer">
+        <div class="flex gap-1 h-[250px] md:h-[300px] mb-4">
+          <div class="w-2/3 h-full overflow-hidden">
+            <img src="https://www.nasa.gov/wp-content/uploads/2026/04/nhq202604110022orig.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="w-1/3 flex flex-col gap-1">
+            <div class="h-1/2 overflow-hidden">
+              <img src="https://www.nasa.gov/wp-content/uploads/2026/04/55203745588-5deded7c3f-o.jpg?w=1024" class="w-full h-full object-cover">
+            </div>
+            <div class="h-1/2 overflow-hidden">
+              <img src="https://images-assets.nasa.gov/image/NHQ202604110025/NHQ202604110025~large.jpg?w=1920&h=1238&fit=clip&crop=faces%2Cfocalpoint" class="w-full h-full object-cover">
+            </div>
+          </div>
+        </div>
+        <h3 class="text-xl font-bold hover:underline">Artemis II Splashdown and Recovery Gallery</h3>
+        <p class="text-gray-500 text-xs font-bold mt-2 uppercase tracking-tighter">70 Images</p>
+      </div>
+
+      <div class="group cursor-pointer">
+        <div class="flex gap-1 h-[250px] md:h-[300px] mb-4">
+          <div class="w-2/3 h-full overflow-hidden">
+            <img src="https://images-assets.nasa.gov/image/art002e015231/art002e015231~large.jpg?w=1920&h=1280&fit=clip&crop=faces%2Cfocalpoint" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="w-1/3 flex flex-col gap-1">
+            <div class="h-1/2 overflow-hidden">
+              <img src="https://images-assets.nasa.gov/image/art002e016198/art002e016198~large.jpg?w=1920&h=1280&fit=clip&crop=faces%2Cfocalpoint" class="w-full h-full object-cover">
+            </div>
+            <div class="h-1/2 overflow-hidden">
+              <img src="https://images-assets.nasa.gov/image/art002e016136/art002e016136~large.jpg?w=1920&h=1280&fit=clip&crop=faces%2Cfocalpoint" class="w-full h-full object-cover">
+            </div>
+          </div>
+        </div>
+        <h3 class="text-xl font-bold hover:underline">Artemis II Lunar Flyby Gallery</h3>
+        <p class="text-gray-500 text-xs font-bold mt-2 uppercase tracking-tighter">86 Images</p>
+      </div>
+
+      <div class="group cursor-pointer">
+        <div class="flex gap-1 h-[250px] md:h-[300px] mb-4">
+          <div class="w-2/3 h-full overflow-hidden">
+            <img src="https://www.nasa.gov/wp-content/uploads/2026/04/55182696113-0c4398702d-o-2.jpg?w=1024" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="w-1/3 flex flex-col gap-1">
+            <div class="h-1/2 overflow-hidden">
+              <img src="https://www.nasa.gov/wp-content/uploads/2026/04/55181686977-7e768c5ab5-o.jpg?w=1024" class="w-full h-full object-cover">
+            </div>
+            <div class="h-1/2 overflow-hidden">
+              <img src="https://www.nasa.gov/wp-content/uploads/2026/04/55183645373-7d4537f635-o.jpg?w=1024" class="w-full h-full object-cover">
+            </div>
+          </div>
+        </div>
+        <h3 class="text-xl font-bold hover:underline">Artemis II Launch Gallery</h3>
+        <div class="flex gap-4 mt-2">
+          <p class="text-gray-500 text-xs font-bold uppercase tracking-tighter">27 Images</p>
+          <p class="text-gray-500 text-xs font-bold uppercase tracking-tighter">1 Video</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <section class="relative min-h-[500px] md:h-[600px] flex items-center overflow-hidden">
+  
+  <img 
+    src="https://www.nasa.gov/wp-content/uploads/2023/01/webb-tarantula-neb.png?resize=2000,1561" 
+    class="absolute w-full h-full object-cover"
+    alt="Nebula Background"
+  >
+  
+  <div class="absolute inset-0 bg-black/40"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 py-16 w-full">
+    <div class="max-w-2xl">
+      
+      <h2 class="text-5xl md:text-7xl font-bold text-white leading-tight mb-8">
+        Explore the <br> Universe <br> from your <br> Inbox
+      </h2>
+      
+      <p class="text-white text-lg md:text-xl font-medium mb-4 leading-snug">
+        Stay up-to-date on the latest news from NASA—<br class="hidden md:block">
+        from Earth to the Moon, the Solar System and beyond.
+      </p>
+
+      <div class="flex flex-col md:flex-row md:items-center gap-6 mb-10">
+        <p class="text-white text-sm md:text-base">
+          We will never share your email address.
+        </p>
+        <a href="#" class="text-white text-sm md:text-base underline underline-offset-4 hover:text-gray-300 transition-colors">
+          Privacy Policy
+        </a>
+      </div>
+
+      <a href="#" class="inline-flex items-center gap-4 text-white font-bold text-2xl group">
+        <span>Sign Up</span>
+        <span class="w-8 h-8 rounded-full bg-[#ff3e3e] flex items-center justify-center group-hover:bg-red-700 transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
+          </svg>
+        </span>
+      </a>
+
+    </div>
+  </div>
+</section>
+<section class="bg-white text-black py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-12 md:gap-20">
+    
+    <div class="w-full md:w-1/2">
+      <p class="text-xs font-bold tracking-tight text-gray-700 mb-6">Freedom 250</p>
+      
+      <h2 class="text-5xl md:text-7xl font-bold leading-[1.1] mb-8">
+        NASA Celebrates America’s 250th Birthday
+      </h2>
+      
+      <div class="space-y-6 text-gray-800">
+        <p class="text-xl md:text-2xl font-bold leading-tight">
+          Our spirit of adventure and innovation will raise our nation to new heights.
+        </p>
+        
+        <p class="text-base md:text-lg leading-relaxed">
+          From the earliest days of exploration, to the first steps on the Moon and 
+          the missions shaping our future, NASA represents the spirit of discovery 
+          that defines our nation. As the United States approaches its semiquincentennial, 
+          Freedom 250 highlights how innovation, courage, and scientific leadership 
+          have carried America forward — and how NASA continues to expand the 
+          frontier for the next generation.
+        </p>
+      </div>
+      
+      <a href="#" class="inline-flex items-center gap-3 text-black font-bold text-xl mt-10 group">
+        <span>Learn More</span>
+        <span class="w-6 h-6 rounded-full bg-[#ff3e3e] flex items-center justify-center text-white text-[10px] group-hover:bg-red-700 transition-colors">
+          ➜
+        </span>
+      </a>
+    </div>
+
+    <div class="w-full md:w-1/2">
+      <div class="mb-6">
+        <img 
+          src="https://www.nasa.gov/wp-content/uploads/2026/04/afrc2026-0077-01.jpg?resize=900,600" 
+          alt="NASA X-59 Aircraft" 
+          class="w-full h-auto object-cover shadow-sm"
+        >
+      </div>
+      
+      <div class="text-xs md:text-sm text-gray-600 leading-relaxed max-w-md">
+        <p class="mb-2">
+          NASA's X-59 is helping the nation celebrate the 250th anniversary of its independence with an update to its livery—its official paint job and insignia. The X-59 has sported a Freedom 250 logo on its engine since its second flight, and it will continue showing off the new detail with every upcoming test flight.
+        </p>
+        <p class="font-medium text-gray-500 italic">NASA/Carla Thomas</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="bg-white text-black py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    
+    <h2 class="text-3xl md:text-4xl font-bold mb-10">More Topics from NASA</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+      
+      <div class="relative h-[300px] overflow-hidden group cursor-pointer">
+        <img src="https://www.nasa.gov/wp-content/uploads/2023/02/15404646465-7920e6d9b7-o.jpg?resize=600,399" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+        <div class="absolute bottom-5 left-5 right-5 flex items-center justify-between">
+          <h3 class="text-white text-xl font-bold">Missions</h3>
+          <span class="w-6 h-6 rounded-full bg-[#ff3e3e] flex items-center justify-center text-white text-[10px]">➜</span>
+        </div>
+      </div>
+
+      <div class="relative h-[300px] overflow-hidden group cursor-pointer">
+        <img src="https://www.nasa.gov/wp-content/uploads/2022/12/51476067951-e10dfb6875-o.jpg?resize=600,400" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+        <div class="absolute bottom-5 left-5 right-5 flex items-center justify-between">
+          <h3 class="text-white text-xl font-bold">Humans In Space</h3>
+          <span class="w-6 h-6 rounded-full bg-[#ff3e3e] flex items-center justify-center text-white text-[10px]">➜</span>
+        </div>
+      </div>
+
+      <div class="relative h-[300px] overflow-hidden group cursor-pointer">
+        <img src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001016/GSFC_20171208_Archive_e001016~large.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+        <div class="absolute bottom-5 left-5 right-5 flex items-center justify-between">
+          <h3 class="text-white text-xl font-bold">Earth</h3>
+          <span class="w-6 h-6 rounded-full bg-[#ff3e3e] flex items-center justify-center text-white text-[10px]">➜</span>
+        </div>
+      </div>
+
+      <div class="relative h-[300px] overflow-hidden group cursor-pointer">
+        <img src="https://science.nasa.gov/wp-content/uploads/2023/06/solar-system-illustration-16x9-1.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+        <div class="absolute bottom-5 left-5 right-5 flex items-center justify-between">
+          <h3 class="text-white text-xl font-bold leading-tight">Our Solar <br> System</h3>
+          <span class="w-6 h-6 rounded-full bg-[#ff3e3e] flex items-center justify-center text-white text-[10px]">➜</span>
+        </div>
+      </div>
+
+      <div class="relative h-[300px] overflow-hidden group cursor-pointer">
+        <img src="https://science.nasa.gov/wp-content/uploads/2023/09/ngc5068-1-flat-final.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+        <div class="absolute bottom-5 left-5 right-5 flex items-center justify-between">
+          <h3 class="text-white text-xl font-bold">Universe</h3>
+          <span class="w-6 h-6 rounded-full bg-[#ff3e3e] flex items-center justify-center text-white text-[10px]">➜</span>
+        </div>
+      </div>
+
+      <div class="relative h-[300px] overflow-hidden group cursor-pointer">
+        <img src="https://science.nasa.gov/wp-content/uploads/2023/04/hubble_faq_image-jpg.webp" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+        <div class="absolute bottom-5 left-5 right-5 flex items-center justify-between">
+          <h3 class="text-white text-xl font-bold leading-tight">Science <br> Missions</h3>
+          <span class="w-6 h-6 rounded-full bg-[#ff3e3e] flex items-center justify-center text-white text-[10px]">➜</span>
+        </div>
+      </div>
+
+      <div class="relative h-[300px] overflow-hidden group cursor-pointer">
+        <img src="https://www.nasa.gov/wp-content/uploads/2025/05/p23-171-176.jpg?resize=600,400" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+        <div class="absolute bottom-5 left-5 right-5 flex items-center justify-between">
+          <h3 class="text-white text-xl font-bold">Aeronautics</h3>
+          <span class="w-6 h-6 rounded-full bg-[#ff3e3e] flex items-center justify-center text-white text-[10px]">➜</span>
+        </div>
+      </div>
+
+      <div class="relative h-[300px] overflow-hidden group cursor-pointer">
+        <img src="https://www.nasa.gov/wp-content/uploads/2022/12/nasa_technology1.png?resize=600,396" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+        <div class="absolute bottom-5 left-5 right-5 flex items-center justify-between">
+          <h3 class="text-white text-xl font-bold">Technology</h3>
+          <span class="w-6 h-6 rounded-full bg-[#ff3e3e] flex items-center justify-center text-white text-[10px]">➜</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<footer class="bg-black text-white pt-20 pb-10">
+  <div class="max-w-7xl mx-auto px-6">
+    
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+      
+      <div class="md:col-span-4">
+        <img src="https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg" alt="NASA Logo" class="w-20 mb-8">
+        <h2 class="text-xl font-bold mb-4">National Aeronautics and Space Administration</h2>
+        <p class="text-sm text-gray-300 leading-relaxed mb-6">
+          NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery.
+        </p>
+        <a href="#" class="text-sm font-bold block mb-4 hover:underline">About NASA's Mission</a>
+        <a href="#" class="inline-flex items-center gap-2 font-bold text-sm group">
+          Join Us 
+          <span class="w-5 h-5 rounded-full bg-[#ff3e3e] flex items-center justify-center text-[10px] group-hover:bg-red-700 transition-colors">➜</span>
+        </a>
+      </div>
+
+      <div class="md:col-span-8 grid grid-cols-2 sm:grid-cols-4 gap-8">
+        <ul class="space-y-4 text-sm font-medium">
+          <li><a href="#" class="hover:underline">Home</a></li>
+          <li><a href="#" class="hover:underline">News & Events</a></li>
+          <li><a href="#" class="hover:underline">Multimedia</a></li>
+          <li><a href="#" class="hover:underline flex items-center gap-2">NASA+ <span class="bg-red-600 px-1 text-[8px] font-bold rounded-sm">LIVE</span></a></li>
+          <li><a href="#" class="hover:underline">Missions</a></li>
+        </ul>
+        <ul class="space-y-4 text-sm font-medium">
+          <li><a href="#" class="hover:underline">Humans in Space</a></li>
+          <li><a href="#" class="hover:underline">Earth</a></li>
+          <li><a href="#" class="hover:underline">The Solar System</a></li>
+          <li><a href="#" class="hover:underline">The Universe</a></li>
+          <li><a href="#" class="hover:underline">Science</a></li>
+        </ul>
+        <ul class="space-y-4 text-sm font-medium">
+          <li><a href="#" class="hover:underline">Aeronautics</a></li>
+          <li><a href="#" class="hover:underline">Technology</a></li>
+          <li><a href="#" class="hover:underline">Learning Resources</a></li>
+          <li><a href="#" class="hover:underline">About NASA</a></li>
+          <li><a href="#" class="hover:underline">NASA en Español</a></li>
+        </ul>
+        <div>
+          <p class="text-xs font-bold text-gray-400 mb-4">Follow NASA</p>
+          <div class="flex gap-4 mb-8">
+            <a href="#" class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700">f</a>
+            <a href="#" class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700">i</a>
+            <a href="#" class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700">𝕏</a>
+            <a href="#" class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700">y</a>
+          </div>
+          <ul class="space-y-2 text-xs font-bold">
+            <li><a href="#" class="hover:underline">More NASA Social Accounts</a></li>
+            <li><a href="#" class="hover:underline">NASA Newsletters</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-800 pt-8 mb-8">
+      <ul class="flex flex-wrap gap-x-6 gap-y-3 text-[11px] font-medium text-gray-300">
+        <li><a href="#" class="hover:underline">Sitemap</a></li>
+        <li><a href="#" class="hover:underline">For Media</a></li>
+        <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+        <li><a href="#" class="hover:underline">FOIA</a></li>
+        <li><a href="#" class="hover:underline">No FEAR Act</a></li>
+        <li><a href="#" class="hover:underline">Office of the IG</a></li>
+        <li><a href="#" class="hover:underline">Budget & Annual Reports</a></li>
+        <li><a href="#" class="hover:underline">Agency Financial Reports</a></li>
+        <li><a href="#" class="hover:underline">Contact NASA</a></li>
+        <li><a href="#" class="hover:underline">Accessibility</a></li>
+      </ul>
+    </div>
+
+    <div class="flex flex-col md:flex-row gap-6 text-[10px] text-gray-500 font-medium">
+      <p>Page Last Updated: <span class="text-gray-300">Apr 29, 2026</span></p>
+      <p>Page Editor: <span class="text-gray-300">Dacia Massengill</span></p>
+      <p>Responsible NASA Official: <span class="text-gray-300">Abigail Bowman</span></p>
+    </div>
+
+  </div>
+</footer>
+</body>
+</html>
